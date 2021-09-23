@@ -1,0 +1,29 @@
+# Programmer: Tim Hunt
+# Course: CS151, Dr. Rajeev
+# Date: Tuesday September 21, 2021
+# Input: Length, Width, And Height
+# Output: The amount of gallons of primer and paint that is required to paint the room excluding the floor
+
+# Width of the Room
+Width = input("Please input the Width of the room(in feet): ")
+Width = float(Width)
+
+# Height of the Room
+Height = input("Please input the Height of the room (in feet): ")
+Height = float(Height)
+
+# Length of the Room
+Length = input("Please input the Length of the room(in feet): ")
+Length = float(Length)
+
+# Compute Gallons of Primer
+Primer = ((((Length * Height) * 2) + ((Width * Height) * 2) + (Length * Width)) /350)
+
+# Compute Gallons of Paint
+Paint = ((((Length * Height)*2) +((Width * Height)*2) + (Length * Width)) /200)
+
+print("Primer is:")
+print(Primer)
+
+print("Paint is: ")
+print(Paint)
